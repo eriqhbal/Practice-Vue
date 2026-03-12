@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 // Import View
 import PracticeOne from '@/Views/PracticeOne.vue'
 import PracticeTwo from '@/Views/PracticeTwo.vue'
+import PracticeThree from '@/Views/PracticeThree.vue'
 
 const routes = [
   {
@@ -12,6 +13,10 @@ const routes = [
   {
     path: '/practice-two',
     component: PracticeTwo,
+  },
+  {
+    path: '/event-handler',
+    component: PracticeThree,
   },
 ]
 

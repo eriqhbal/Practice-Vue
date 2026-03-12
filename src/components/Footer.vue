@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">© 2026 Notery</footer>
+  <footer class="footer">© 2026 Notery. All Rights Reserved</footer>
 </template>
 
 <style>
