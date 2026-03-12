@@ -32,7 +32,10 @@ const menuGroups = [
   },
   {
     title: 'The Net Ninja Course',
-    items: [{ name: 'Event Handler', icon: '🖕🏻', route: '/event-handler' }],
+    items: [
+      { name: 'Event Handler', icon: '🖕🏻', route: '/event-handler' },
+      { name: 'Outputting List', icon: '✌🏻', route: '/outputting-list' },
+    ],
   },
   {
     title: 'Admin',

@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import PracticeOne from '@/Views/PracticeOne.vue'
 import PracticeTwo from '@/Views/PracticeTwo.vue'
 import PracticeThree from '@/Views/PracticeThree.vue'
+import OutputtingList from '@/Views/OutputtingList.vue'
 
 const routes = [
   {
@@ -17,6 +18,10 @@ const routes = [
   {
     path: '/event-handler',
     component: PracticeThree,
+  },
+  {
+    path: '/outputting-list',
+    component: OutputtingList,
   },
 ]
 

@@ -2,7 +2,7 @@
 
 <template>
   <main>
-    <h2>Practice One</h2>
+    <h2>Togglling Favs</h2>
   </main>
 </template>
 

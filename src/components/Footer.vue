@@ -4,7 +4,7 @@
 
 <style>
 .footer {
-  height: 50px;
+  height: 45px;
   background: white;
   border-top: 1px solid #e2e8f0;
   flex-shrink: 0;
