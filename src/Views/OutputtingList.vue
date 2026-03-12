@@ -41,7 +41,6 @@ const books = [
       <div v-show="isShowList" class="listBook">
         <ul>
           <li v-for="book in books" :key="book.title">
-            <div v-bind="{ favorite: book.isFav }"></div>
             <img v-bind:src="book.img" alt="" />
             <span class="author">{{ book.author }}</span>
             <span class="book-title">{{ book.title }}</span>
@@ -96,21 +95,30 @@ const books = [
   margin: 0;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: horizontal;
   gap: 10px;
 }
 
 .listBook li {
-  padding: 14px;
+  width: 110px;
+  padding: 10px;
   background: #f8fafc;
   border-radius: 8px;
-  border-left: 4px solid #3b82f6;
 
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  align-items: center;
+  text-align: center;
 
   transition: all 0.25s ease;
+}
+
+.listBook img {
+  width: 70px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 6px;
 }
 
 .listBook li:hover {
@@ -119,11 +127,12 @@ const books = [
 }
 
 .author {
-  font-size: 13px;
+  font-size: 12px;
   color: #6b7280;
 }
 
 .book-title {
+  font-size: 13px;
   font-weight: 600;
   color: #111827;
 }

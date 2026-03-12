@@ -5,6 +5,7 @@ import PracticeOne from '@/Views/PracticeOne.vue'
 import PracticeTwo from '@/Views/PracticeTwo.vue'
 import PracticeThree from '@/Views/PracticeThree.vue'
 import OutputtingList from '@/Views/OutputtingList.vue'
+import TheVueClie from '@/Views/TheVueClie.vue'
 
 const routes = [
   {
@@ -22,6 +23,10 @@ const routes = [
   {
     path: '/outputting-list',
     component: OutputtingList,
+  },
+  {
+    path: '/vue-cli',
+    component: TheVueClie,
   },
 ]
 

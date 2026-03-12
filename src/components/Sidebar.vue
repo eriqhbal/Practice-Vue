@@ -35,6 +35,7 @@ const menuGroups = [
     items: [
       { name: 'Event Handler', icon: '🖕🏻', route: '/event-handler' },
       { name: 'Outputting List', icon: '✌🏻', route: '/outputting-list' },
+      { name: 'The Vue Cli', icon: '✈️', route: '/vue-cli' },
     ],
   },
   {
