@@ -6,6 +6,7 @@ import PracticeTwo from '@/Views/PracticeTwo.vue'
 import PracticeThree from '@/Views/PracticeThree.vue'
 import OutputtingList from '@/Views/OutputtingList.vue'
 import TheVueClie from '@/Views/TheVueClie.vue'
+import BuildReactionGame from '@/Views/BuildReactionGame.vue'
 
 const routes = [
   {
@@ -27,6 +28,10 @@ const routes = [
   {
     path: '/vue-cli',
     component: TheVueClie,
+  },
+  {
+    path: '/build-reaction',
+    component: BuildReactionGame,
   },
 ]
 

@@ -1,14 +1,21 @@
 <script setup lang="ts">
 // Import
 import { ref } from 'vue'
+import PropertyTest from '@/components/PropertyTest.vue'
+import ModalPractice from '@/components/ModalPractice.vue'
 
 // Variable
 const nameInput = ref('')
 const textName = ref('')
+const isShowTheModal = ref(false)
 
 // Handle Function
 const getName = () => {
   nameInput.value = textName.value
+}
+
+const handleChangeShowModal = () => {
+  isShowTheModal.value = !isShowTheModal.value
 }
 </script>
 
@@ -19,6 +26,21 @@ const getName = () => {
       <button @click="getName">Click!</button>
 
       <p>Jadi nama dia adalah {{ nameInput }}</p>
+      <PropertyTest v-bind:textName="'Eriqhbal'" :age="49" />
+
+      <!-- Test Another Modal using emit, slot and custom -->
+      <div v-if="isShowTheModal">
+        <ModalPractice @theClose="handleChangeShowModal">
+          <template #linkAja>
+            <a href="#">Sign Up</a>
+            <a href="#">Sign In</a>
+          </template>
+          <p>Just Practice Every Single Day</p>
+          <p>Keep Discipline until you get the progress</p>
+        </ModalPractice>
+      </div>
+
+      <button @click="handleChangeShowModal">Show The Modal</button>
     </div>
   </main>
 </template>
