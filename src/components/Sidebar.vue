@@ -29,6 +29,7 @@ const menuGroups = [
       { name: 'Pembuatan Akta', icon: '📃', route: '/create-akta' },
       { name: 'Legalitas', icon: '🪧', route: '/create-legality' },
       { name: 'Form Input', icon: '🕌', route: '/form-input' },
+      { name: 'Fetch Data', icon: '🎤', route: '/fetching-data' },
     ],
   },
   {

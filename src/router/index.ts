@@ -8,6 +8,8 @@ import OutputtingList from '@/Views/OutputtingList.vue'
 import TheVueClie from '@/Views/TheVueClie.vue'
 import BuildReactionGame from '@/Views/BuildReactionGame.vue'
 import FormInput from '@/Views/FormInput.vue'
+import NotFound from '@/Views/NotFound.vue'
+import FetchingData from '@/Views/FetchingData.vue'
 
 const routes = [
   {
@@ -37,6 +39,14 @@ const routes = [
   {
     path: '/form-input',
     component: FormInput,
+  },
+  {
+    path: '/fetching-data',
+    component: FetchingData,
+  },
+  {
+    path: '/:catchAll(.*)',
+    component: NotFound,
   },
 ]
 
