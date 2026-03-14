@@ -7,6 +7,7 @@ import PracticeThree from '@/Views/PracticeThree.vue'
 import OutputtingList from '@/Views/OutputtingList.vue'
 import TheVueClie from '@/Views/TheVueClie.vue'
 import BuildReactionGame from '@/Views/BuildReactionGame.vue'
+import FormInput from '@/Views/FormInput.vue'
 
 const routes = [
   {
@@ -32,6 +33,10 @@ const routes = [
   {
     path: '/build-reaction',
     component: BuildReactionGame,
+  },
+  {
+    path: '/form-input',
+    component: FormInput,
   },
 ]
 
